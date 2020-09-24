@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-3.4.1/jquery-3.4.1.js"></script>
+<script src="js/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+<link rel="icon" href="img/loading.gif"  />
+<link rel="Shortcut Icon" href="img/loading.gif"  /> 
+<script>
+   var aa=0;
+　　var timeChange=1000;
+　　var arr = new Array();
+　　arr[0]="img/cool_00013-min.png";
+　　arr[1]="img/cool_00034-min.png";
+　　arr[2]="img/cool_00044-min.png";
+　　//调用setInterval函数
+　　setInterval(ChangeImg, timeChange);
+　　function ChangeImg(){
+　　　　var image = document.getElementById("image");
+　　　　if(aa==arr.length-1){
+　　　　　　aa=0;
+　　　　}else{
+　　　　　　aa+=1;
+　　　　}
+　　　　image.src=arr[aa];
+　　　　}
+	$(document).ready(function(){
+		//淡出活跃榜
+		$(".btn_h").click(function(){
+			$(".index3_twe_twe_twe").delay(500).animate({
+        left: "-100px"
+    }, 500);
+			$(".index3_twe_twe_twe").delay(500).fadeOut(1000);
+		});
+		
+	});
+</script>
+</head>
+<body>
+	<div class="index">
+		<div class="index_herd">
+			<div class="index_img_logo"><img src="logo_3.png" alt="logo"></div>
+			<div>
+				<ul class="index_img_logo index_text li">
+					<li><a href="#"><span>产品</span></a></li>
+					<li><a href="#">企业版</a></li>
+					<li><a href="#">数据案例</a></li>
+				</ul>
+			</div>
+			<div class="index_de">
+				<div class="index_de_twe" id="btn_z"><a href="add.html" class="index_de_twe_a" οnmοuseοver="a()" onMouseOut="b()">注册</a></div>
+				<div class="index_de_one" id="btn_d"><a href="login.html" class="index_de_twe_a">登录</a></div>
+			</div>
+		</div>
+		<div class="index1">
+			<div class="index1_one">
+				<img class="index1_img" src="hTitle.png"/><br/>
+				<button class="index1_button"><a href="add.html">免费注册</a></button>
+		  </div>
+			<div class="index1_twe">
+				<img class="index1_twe_img" src="logo1.png">
+				<img class="index1_twe_img1" src="cool.png">
+				<img class="index1_twe_img1" src="cool_00034-min.png" id="image">
+			</div>
+		</div>
+		<div class="index2">
+			<div class="index2_one">
+				<img src="hadoop.png" class="index2_one index2_img"/>
+				<h2 class="aaa">大数据</h2>
+				<p>大数据分析，科学统计</p>
+				<p>开发者的活跃度</p>
+		  </div>
+			<div class="index2_one">
+				<img src="task.png" class="index2_one index2_img"/>
+				<h2>任务类型</h2>
+				<p class="ccc">允许创建多任务类型</p>
+				<p class="ddd">便于分开管理任务</p>
+		  </div>
+			<div class="index2_one">
+				<img src="code.png" class="index2_one index2_img"/>
+				<h2>代码仓库</h2>
+				<p>一个任务类型搭配一个仓库</p>
+				<p class="index2_one eee">实现开发独立性</p>
+		  </div>
+			<div class="index2_one">
+				<img src="stone.png" class="index2_one index2_img"/>
+			  <h2 class="index2_one aaa">里程碑</h2>
+			  <p class="index2_one bbb">支持添加里程碑</p>
+			  <p class="index2_one bbb">便于阶段性管理</p>
+		  </div>
+		</div>
+		<div class="index3">
+			<div class="index3_one">
+				<img src="title3.png" class="index3_one_img">
+			</div>
+			<div class="index3_twe">
+				<div class="index3_twe_one">
+					<div class="index3_twe_one_one">
+						<div class="index3_twe_one_one_one"></div>
+						<div class="index3_twe_one_one_twe"></div>
+					</div>
+					<div class="index3_twe_one_img">
+						<img src="dsj.png" />
+					</div>
+					
+				</div>
+				<div class="index3_twe_twe">
+					<div class="index3_twe_twe_one">
+						<img src="rank_top.png"/>
+					</div>
+					<div class="index3_twe_twe_twe">
+						<img src="rank.png"/>
+					</div>
+				</div>
+			</div>
+			<div class="index3_seer">
+				<div class="index3_seer_one">
+					<ul>
+						<li class="btn_h">活跃榜</li>
+						<li><a href="#" class="btn_j"><span>具体分析</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="index6">
+			<div class="index6_one">
+				<div class="index6_one_one">
+					<div class="index6_one_one_img">
+						<img src="rank_top.png"  />
+					</div>
+					<div class="index6_one_one_img1">
+						<img src="img/task1.png" />
+					</div>
+				</div>
+				<div class="index6_one_twe">.
+					<div class="index6_one_twe_one">
+						<img src="img/title1.png">
+					</div>
+				</div>
+			</div>
+			<div class="index6_twe">
+				<div class="index7_twe_one">
+					<ul>
+						<li><a href="#"><span>任务列表</span></a></li>
+						<li><a href="#">任务看板</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="index7">
+			<div class="index7_one">
+				<div class="index7_one_one">
+					<div class="index7_one_one_one" >
+						<img src="img/title.png"/>
+					</div>
+				</div>
+				<div class="index7_one_twe">
+					<div class="index7_one_twe_one">
+						<img src="img/rank_top.png"/>
+					</div>
+					<div class="index7_one_twe_twe">
+						<img src="img/code3.png"/>
+					</div>
+				</div>
+			</div>
+				<div class="index7_twe">
+					<div class="index7_twe_one">
+						<ul>
+							<li><a href="#">代码仓库</a></li>
+							<li><a href="#"><span>仓库配置</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		<div class="index8">
+			<div class="index8_one">
+				<div class="index8_one_one">
+					<div class="index8_one_one_one">
+						<img src="img/rank_top.png"/>
+					</div>
+					<div class="index8_one_one_twe">
+						<img src="img/stone1.png"/>
+					</div>
+				</div>
+				<div class="index8_one_twe">
+					<div class="index8_one_twe_one">
+						<div class="index8_one_twe_one_one">
+<!--							<div class="bei"></div>-->
+							<img src="img/cs.png"/>
+							<div class="index8_one_twe_one_one_one">
+								<img src="img/tuding_1.png"/>
+							</div>
+						</div>
+					</div>
+					<div class="index8_one_twe_twe" >
+						<img src="img/title2.png"/>
+					</div>
+					
+				</div>
+			</div>
+				<div class="index8_twe">
+					<div class="index8_twe_one">
+						<ul>
+							<li><a href="#"><span>里程碑</a></span></li>
+							<li><a href="#">关联任务</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		<div class="index4">
+			<img src="coop.png">
+			<div class="index4 index4_button"><a href="#" id="mm">免费使用</a></div>
+		</div>
+			<div class="index5">
+				<img src="img/logo_1.png" class="index5_b"/>
+				<img src="footerImage.png" class="index5_img"/>
+				<div class="index5_a">Copyright © 2016-2020 成都成达传网络科技有限公司 蜀ICP备16009459号-5</div>
+			</div>
+		</div>
+	</body>
+</html>

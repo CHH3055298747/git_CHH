@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="img/loading.gif"  />
+<link rel="Shortcut Icon" href="img/loading.gif"  /> 
+<title>add</title>
+<link href="css/add.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-3.4.1/jquery-3.4.1.js"></script>
+<script src="js/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//显示密码
+			$("#open").hide();
+			$(".ss_1").hide();
+			$("#close").click(function(){
+				$(".ss_1").val($(".ss").val());
+  				$("#open").show();
+				$(".ss_1").show();
+				$("#close").hide();
+				$(".ss").hide();
+  			});
+			$("#open").click(function(){
+				$(".ss").val($(".ss_1").val());
+  				$("#close").show();
+				$(".ss").show();
+				$("#open").hide();
+				$(".ss_1").hide();
+  			});
+		});
+		//获取验证码计时
+		function aaa(){
+			var i = 60;
+		var stop = setInterval(function() {
+			--i;
+    	if (i == 0) {
+        	clearInterval(stop);
+    		}
+    	$(".demo").text(i+"s");
+		}, 1000);
+//			var j=$(".demo").val();
+//			if(j.equals("0s")){
+//			   	$(".demo").text("重新获取");
+//			   }
+		}
+		
+</script>
+</head>
+	<div class="add" >
+		<div class="add1">
+			<div class="add1_one">
+				<a href="index.html"><img src="img/logo_3.png"/></a>
+			</div>
+			<div class="add1_twe">
+				<a href="index.html"><img src="img/more_product.png"/></a>
+			</div>
+		</div>
+		<div class="add2">
+			<div class="add2_one">
+				<div class="add2_one_one">
+					<img src="img/Logo-header.png"/>
+				</div>
+			</div>
+			<div class="add2_twe">
+				<div class="add2_twe_one">
+					<div class="add2_twe_one_one">
+						<div class="add2_twe_one_one_one">
+							<a href="login.html">
+								<img src="img/retun_go.png"/>
+							</a>
+						</div>
+						<p>登录</p>
+					</div>
+					<div class="add2_twe_one_twe">
+						<img src="img/register.png"/>
+						<p>注册前请仔细阅读<a href="#">《COOP云用户协议》</a>,点击注册即表示您同意该协议 </p>
+					</div>
+				</div>
+				<div class="add2_twe_twe">
+					<div class="add2_twe_twe_one">
+						<p>
+							<img src="img/tel.png"/>
+							<input type="text" placeholder="输入用户名"/>
+						</p>
+						<hr/>
+						<p>
+							<img src="img/tel2.png"/>
+							<input type="text" placeholder="输入验证码" class="y_a"/>
+<!--							<div class="ma">-->
+								<span role="button" style="font-size: 12xp; color: #D3D3D3" class="demo" onClick="aaa()">获取验证码</span>
+<!--							</div>-->
+						</p>
+						<hr/>
+						<p>
+							<img src="img/pass.png"/>
+							<input type="password" placeholder="输入密码" class="ss"/>
+							<input type="text" placeholder="输入密码" class="ss_1"/>
+						</p>
+						<hr/>
+						<div class="Y_y">
+							<a href="#">
+								<img id="close" src="img/close.png" />
+								<img id="open" src="img/open.png" />
+							</a>
+						</div>
+					</div>
+					<div class="add2_twe_twe_twe">
+						<div class="add2_twe_twe_twe_one">
+							<div class="add2_twe_twe_twe_one_one">
+								<div class="add2_twe_twe_twe_one_one_one">
+									<a href="#"><img src="img/fadeLeft.png"/></a>
+								</div>
+								<div class="add2_twe_twe_twe_one_one_twe">
+									<p>请向右滑动滑块</p>
+								</div>
+							</div>
+						</div>
+						<div class="add2_twe_twe_twe_twe">
+							<a href="index.html">免费注册</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="add3"></div>
+	</div>
+<body>
+</body>
+</html>
