@@ -2,222 +2,1255 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>首页</title>
-<link href="index.css" rel="stylesheet" type="text/css">
-<script src="js/jquery-3.4.1/jquery-3.4.1.js"></script>
-<script src="js/jquery-3.4.1/jquery-3.4.1.min.js"></script>
-<link rel="icon" href="img/loading.gif"  />
-<link rel="Shortcut Icon" href="img/loading.gif"  /> 
-<script>
-   var aa=0;
-　　var timeChange=1000;
-　　var arr = new Array();
-　　arr[0]="img/cool_00013-min.png";
-　　arr[1]="img/cool_00034-min.png";
-　　arr[2]="img/cool_00044-min.png";
-　　//调用setInterval函数
-　　setInterval(ChangeImg, timeChange);
-　　function ChangeImg(){
-　　　　var image = document.getElementById("image");
-　　　　if(aa==arr.length-1){
-　　　　　　aa=0;
-　　　　}else{
-　　　　　　aa+=1;
-　　　　}
-　　　　image.src=arr[aa];
-　　　　}
-	$(document).ready(function(){
-		//淡出活跃榜
-		$(".btn_h").click(function(){
-			$(".index3_twe_twe_twe").delay(500).animate({
-        left: "-100px"
-    }, 500);
-			$(".index3_twe_twe_twe").delay(500).fadeOut(1000);
-		});
-		
-	});
-</script>
+<title>北京智教三和科技有限公司</title>
+<link href="css/bne.css" rel="stylesheet" type="text/css">
+<link href="img/logo.png" rel="shortcut icon">
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/ben.js"></script>
 </head>
 <body>
-	<div class="index">
-		<div class="index_herd">
-			<div class="index_img_logo"><img src="logo_3.png" alt="logo"></div>
+	<div class="header">
+		<div class="logo">
+			<img src="img/组 1@3x.png"/>
+		</div>
+		<div class="nav" id="nav">
+			<ul>
+				<li><a href="#header_lb" class="s_1">首页</a></li>
+				<li><a href="#tit_y" class="y_1">优势</a></li>
+				<li><a href="#tit_td" class="t_y">产品特点</a></li>
+				<li><a href="#tit_fa" class="j_1">解决方案</a></li>
+				<li><a href="#tit_cj" class="c_1">应用场景</a></li>
+				<li><a href="#tit_xx" class="z_1">政策学习</a></li>
+				<li><a href="#tit_xw" class="x_1">新闻中心</a></li>
+				<li><a href="#tit_gy" class="g_1">关于我们</a></li>
+			</ul>
+		</div>
+		<div class="service">
 			<div>
-				<ul class="index_img_logo index_text li">
-					<li><a href="#"><span>产品</span></a></li>
-					<li><a href="#">企业版</a></li>
-					<li><a href="#">数据案例</a></li>
-				</ul>
+				<span>400-009-0938</span>
 			</div>
-			<div class="index_de">
-				<div class="index_de_twe" id="btn_z"><a href="add.html" class="index_de_twe_a" οnmοuseοver="a()" onMouseOut="b()">注册</a></div>
-				<div class="index_de_one" id="btn_d"><a href="login.html" class="index_de_twe_a">登录</a></div>
+			<div>
+				<span>立即联系</span>
 			</div>
 		</div>
-		<div class="index1">
-			<div class="index1_one">
-				<img class="index1_img" src="hTitle.png"/><br/>
-				<button class="index1_button"><a href="add.html">免费注册</a></button>
-		  </div>
-			<div class="index1_twe">
-				<img class="index1_twe_img" src="logo1.png">
-				<img class="index1_twe_img1" src="cool.png">
-				<img class="index1_twe_img1" src="cool_00034-min.png" id="image">
+	</div>
+	<div class="header_lb" id="header_lb">
+    <div class="box">
+	  <div class="box-1">
+		 <ul>
+			 <li>
+			     <img src="img/1@3x.png"></img>
+				 <h2>智教APP神器下载</h2>
+			 </li>
+			 <li>
+				 <img src="img/2@3x.png"></img>
+				 <h2>完美还原现代化互联网化</h2>
+			 </li>
+			 <li>
+				 <img src="img/4@3x.png"></img>
+				 <h2>现代化教育</h2>
+			 </li>
+			 <li>
+				 <img src="img/3@3x.png"></img>
+				 <h2>智教神器</h2>
+			 </li>
+			 <li>
+				 <img src="img/5@3x.png"></img>
+				 <h2>同心共筑教育强国梦</h2>
+			 </li>
+		</ul>
+	</div>
+	<div class="box-2">
+		<ul>	
+			
+		</ul>
+	</div>
+	<div class="box-3">
+		<span class="prev1"> < </span>
+		<span class="next1"> > </span>
+	</div>
+		</div>
+</div>
+	<div class="tit_y" id="tit_y">
+		<div>
+			<div>
+				<p>我们的优势</p>
+			</div>
+			<div>
+				<P>为什么选择“智教学府”</P>
 			</div>
 		</div>
-		<div class="index2">
-			<div class="index2_one">
-				<img src="hadoop.png" class="index2_one index2_img"/>
-				<h2 class="aaa">大数据</h2>
-				<p>大数据分析，科学统计</p>
-				<p>开发者的活跃度</p>
-		  </div>
-			<div class="index2_one">
-				<img src="task.png" class="index2_one index2_img"/>
-				<h2>任务类型</h2>
-				<p class="ccc">允许创建多任务类型</p>
-				<p class="ddd">便于分开管理任务</p>
-		  </div>
-			<div class="index2_one">
-				<img src="code.png" class="index2_one index2_img"/>
-				<h2>代码仓库</h2>
-				<p>一个任务类型搭配一个仓库</p>
-				<p class="index2_one eee">实现开发独立性</p>
-		  </div>
-			<div class="index2_one">
-				<img src="stone.png" class="index2_one index2_img"/>
-			  <h2 class="index2_one aaa">里程碑</h2>
-			  <p class="index2_one bbb">支持添加里程碑</p>
-			  <p class="index2_one bbb">便于阶段性管理</p>
-		  </div>
-		</div>
-		<div class="index3">
-			<div class="index3_one">
-				<img src="title3.png" class="index3_one_img">
-			</div>
-			<div class="index3_twe">
-				<div class="index3_twe_one">
-					<div class="index3_twe_one_one">
-						<div class="index3_twe_one_one_one"></div>
-						<div class="index3_twe_one_one_twe"></div>
-					</div>
-					<div class="index3_twe_one_img">
-						<img src="dsj.png" />
-					</div>
-					
+		<div>
+			<div>
+				<div>
+					<img src="img/30303_15928097204258@3x.png"/>
 				</div>
-				<div class="index3_twe_twe">
-					<div class="index3_twe_twe_one">
-						<img src="rank_top.png"/>
-					</div>
-					<div class="index3_twe_twe_twe">
-						<img src="rank.png"/>
-					</div>
+				<div>
+					<p>智能化软件</p>
+				</div>
+				<div>
+					<p>拥有10年以上经验的软件研发团队，覆盖 教育行业领域的教、学、练、测、溯等一 体化软件的解决方案</p>
 				</div>
 			</div>
-			<div class="index3_seer">
-				<div class="index3_seer_one">
-					<ul>
-						<li class="btn_h">活跃榜</li>
-						<li><a href="#" class="btn_j"><span>具体分析</span></a></li>
-					</ul>
+			<div>
+				<div>
+					<img src="img/30303_15928097292549@3x.png"/>
+				</div>
+				<div>
+					<p>智能化硬件</p>
+				</div>
+				<div>
+					<p>拥有10年以上的智能化硬件研发及生产 经验，在软硬件结合互联方面，具有丰富 的经验，完全能满足客户的多元化需求</p>
 				</div>
 			</div>
-		</div>
-		<div class="index6">
-			<div class="index6_one">
-				<div class="index6_one_one">
-					<div class="index6_one_one_img">
-						<img src="rank_top.png"  />
-					</div>
-					<div class="index6_one_one_img1">
-						<img src="img/task1.png" />
-					</div>
+			<div>
+				<div>
+					<img src="img/30303_159280973737810@3x.png"/>
 				</div>
-				<div class="index6_one_twe">.
-					<div class="index6_one_twe_one">
-						<img src="img/title1.png">
-					</div>
+				<div>
+					<p>智能化方案</p>
 				</div>
-			</div>
-			<div class="index6_twe">
-				<div class="index7_twe_one">
-					<ul>
-						<li><a href="#"><span>任务列表</span></a></li>
-						<li><a href="#">任务看板</a></li>
-					</ul>
+				<div>
+					<p>为客户提供智能化的在线教育应用创新项目 方案，探索产教结合吗，落实国家“互联网+教育” 战略，形成“政-企-研-校”发展的长效</p>
 				</div>
 			</div>
 		</div>
-		<div class="index7">
-			<div class="index7_one">
-				<div class="index7_one_one">
-					<div class="index7_one_one_one" >
-						<img src="img/title.png"/>
-					</div>
-				</div>
-				<div class="index7_one_twe">
-					<div class="index7_one_twe_one">
-						<img src="img/rank_top.png"/>
-					</div>
-					<div class="index7_one_twe_twe">
-						<img src="img/code3.png"/>
-					</div>
-				</div>
+	</div>
+	<div class="tit_td" id="tit_td">
+		<div>
+			<div>
+				<span>基于<span>地理位置</span>上线</span>
 			</div>
-				<div class="index7_twe">
-					<div class="index7_twe_one">
-						<ul>
-							<li><a href="#">代码仓库</a></li>
-							<li><a href="#"><span>仓库配置</span></a></li>
-						</ul>
-					</div>
+			<div>
+				<div>
+					<img src="img/组 1@3x(1).png"/>
 				</div>
-			</div>
-		<div class="index8">
-			<div class="index8_one">
-				<div class="index8_one_one">
-					<div class="index8_one_one_one">
-						<img src="img/rank_top.png"/>
+				<div>
+					<div>
+						<div class="tit_td1">
+							<p>实现1个打通</p>
+							<p><img src="img/椭圆 7@3x.png"/>&nbsp;打通现代教育产业链</p>
+						</div>
 					</div>
-					<div class="index8_one_one_twe">
-						<img src="img/stone1.png"/>
+					<div>
+						<div class="tit_td1">
+							<p>打破教学成果难转化局限</p>
+							<p><img src="img/椭圆 7@3x.png"/>&nbsp;打破教育资源地域限制局限</p>
+							<p><img src="img/椭圆 7@3x.png"/>&nbsp;打破教育资源时间和空间局限</p>
+							<p><img src="img/椭圆 7@3x.png"/>&nbsp;打破教学成果难转化局限</p>
+						</div>
 					</div>
-				</div>
-				<div class="index8_one_twe">
-					<div class="index8_one_twe_one">
-						<div class="index8_one_twe_one_one">
-<!--							<div class="bei"></div>-->
-							<img src="img/cs.png"/>
-							<div class="index8_one_twe_one_one_one">
-								<img src="img/tuding_1.png"/>
+					<div>
+						<div class="tit_td1">
+						<p>6个转化</p>
+						<div>
+							<div>
+								<p><img src="img/椭圆 7@3x.png"/>&nbsp;教与学移动化</p>
+								<p><img src="img/椭圆 7@3x.png"/>&nbsp;传播自媒化</p>
+								<p><img src="img/椭圆 7@3x.png"/>&nbsp;互动智教化</p>
+							</div>
+							<div>
+								<p><img src="img/椭圆 7@3x.png"/>&nbsp;知识网络化</p>
+								<p><img src="img/椭圆 7@3x.png"/>&nbsp;掌握溯源化</p>
+								<p><img src="img/椭圆 7@3x.png"/>&nbsp;思维多元化</p>
 							</div>
 						</div>
 					</div>
-					<div class="index8_one_twe_twe" >
-						<img src="img/title2.png"/>
-					</div>
-					
-				</div>
-			</div>
-				<div class="index8_twe">
-					<div class="index8_twe_one">
-						<ul>
-							<li><a href="#"><span>里程碑</a></span></li>
-							<li><a href="#">关联任务</a></li>
-						</ul>
 					</div>
 				</div>
 			</div>
-		<div class="index4">
-			<img src="coop.png">
-			<div class="index4 index4_button"><a href="#" id="mm">免费使用</a></div>
 		</div>
-			<div class="index5">
-				<img src="img/logo_1.png" class="index5_b"/>
-				<img src="footerImage.png" class="index5_img"/>
-				<div class="index5_a">Copyright © 2016-2020 成都成达传网络科技有限公司 蜀ICP备16009459号-5</div>
+	</div>
+	<div class="tit_fa" id="tit_fa">
+		<div>
+			<div>
+				<div class="tit_fa1">
+					<span>网络空间人人通</span>
+				</div>
+				<div class="kj_l" style="margin-top: 20px;">
+					<div>
+						<div>
+							<img src="img/30303_159281149068413@3x.png"/>
+						</div>
+						<p>网络化学习</p>
+					</div>
+					<div>
+						<p style="font-size: 8px;">以“学生为中心”学习，个性化自主学习所需科目知识点资源</p>
+					</div>
+				</div>
+				<div class="kj_l">
+					<div>
+						<div>
+							<img src="img/30303_159281149068413@3x.png"/>
+						</div>
+						<p>网络化练习</p>
+					</div>
+					<div>
+						<p>以“学生为中心”练习，个性化自主选择知识点进行练习，实时输入，自主对比</p>
+					</div>
+				</div>
+				<div class="kj_l">
+					<div>
+						<div>
+							<img src="img/30303_159281149068413@3x.png"/>
+						</div>
+						<p>网络化测试</p>
+					</div>
+					<div>
+						<p>以“学生为中心”测试，个性化自主选择科目知识点进行组卷测试，精准把握答题速度</p>
+					</div>
+				</div>
+			</div>
+			<div class="kj_t">
+				<div>
+					<img src="img/9@3x.png"/>
+				</div>
 			</div>
 		</div>
-	</body>
+	</div>
+	<div class="tit_fadd" id="tit_fa2">
+		<div>
+			<div>
+				<img style="width: 280px; margin-top: 10px;" src="img/14@3x.png"/>
+			</div>
+			<div>
+				<div class="tit_fa1">
+					<span>互动教学智教通</span>
+				</div>
+				<div class="kj_l" style="margin-top: 20px;">
+					<div>
+						<div>
+							<img src="img/30303_159281149068413@3x.png"/>
+						</div>
+						<p>网络化学习</p>
+					</div>
+					<div>
+						<p style="width:370px; ">线上线下融合式互动教学，轻松实现网络化录课、备课、教课、发布作业、组卷考试 与评价等一体化教学的整体流程</p>
+					</div>
+				</div>
+				<div class="kj_l">
+					<div>
+						<div>
+							<img src="img/30303_159281149068413@3x.png"/>
+						</div>
+						<p>网络化投稿</p>
+					</div>
+					<div>
+						<p style="width:370px; ">语音、视频、教学输入轨迹（智能三合一），将教学方法与学术思维形成独特的教学 成果后，实时保存；投稿后，放大教学成果，转化为学术</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tit_fa" id="tit_fa3">
+		<div>
+			<div>
+			  <div class="tit_fa1" style="width: 400px;">
+					<span>学校互动教育 大数据解决方案</span>
+				</div>
+			  <div class="kj_l" style="margin-top: 50px; ">
+					<div>
+						<div>
+							<img src="img/30303_159281149068413@3x.png"/>
+						</div>
+						<p>网络化学习</p>
+					</div>
+					<div>
+						<p style="font-size: 8px;">以“学生为中心”学习，个性化自主学习所需科目知识点资源</p>
+					</div>
+				</div>
+				<div class="kj_l">
+					<div>
+						<div>
+						  <img src="img/30303_159281149068413@3x.png"/>
+						</div>
+						<p>网络化练习</p>
+					</div>
+					<div>
+						<p>以“学生为中心”练习，个性化自主选择知识点进行练习，实时输入，自主对比</p>
+					</div>
+				</div>
+				<div class="kj_l">
+					<div>
+						<div>
+							<img src="img/30303_159281149068413@3x.png"/>
+						</div>
+						<p>网络化测试</p>
+					</div>
+					<div>
+						<p>以“学生为中心”测试，个性化自主选择科目知识点进行组卷测试，精准把握答题速度</p>
+					</div>
+				</div>
+			</div>
+		  <div class="kj_t">
+				<div style="width: 350px;margin-left: 150px;margin-top: 50px;">
+					<img src="img/13@3x.png"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tit_fadd" id="tit_fa4">
+		<div>
+			<div>
+			  <img style="width: 280px; margin-top: 10px;" src="img/12@3x.png"/>
+			</div>
+			<div>
+			  <div class="tit_fa1" style="width: 500px;">
+					<span>省市区县-互动教育 大数据解决方案</span>
+				</div>
+				<div class="kj_l" style="margin-top: 20px;">
+					<div>
+						<div>
+							<img src="img/30303_159281149068413@3x.png"/>
+						</div>
+						<p>网络化学习</p>
+					</div>
+					<div>
+						<p style="width:370px; ">线上线下融合式互动教学，轻松实现网络化录课、备课、教课、发布作业、组卷考试 与评价等一体化教学的整体流程</p>
+					</div>
+				</div>
+				<div class="kj_l">
+					<div>
+						<div>
+							<img src="img/30303_159281149068413@3x.png"/>
+						</div>
+						<p>网络化投稿</p>
+					</div>
+					<div>
+						<p style="width:370px; ">语音、视频、教学输入轨迹（智能三合一），将教学方法与学术思维形成独特的教学 成果后，实时保存；投稿后，放大教学成果，转化为学术</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tit_fa" id="tit_fa5">
+		<div>
+			<div>
+				<div class="tit_fa1" style="width: 400px;">
+					<span>家校互动 大数据解决方案</span>
+				</div>
+				<div class="kj_l" style="margin-top: 50px; ">
+					<div>
+						<div>
+							<img src="img/30303_159281149068413@3x.png"/>
+						</div>
+						<p>网络化学习</p>
+					</div>
+					<div>
+						<p style="font-size: 8px;">以“学生为中心”学习，个性化自主学习所需科目知识点资源</p>
+					</div>
+				</div>
+				<div class="kj_l">
+					<div>
+						<div>
+							<img src="img/30303_159281149068413@3x.png"/>
+						</div>
+						<p>网络化练习</p>
+					</div>
+					<div>
+						<p>以“学生为中心”练习，个性化自主选择知识点进行练习，实时输入，自主对比</p>
+					</div>
+				</div>
+				<div class="kj_l">
+					<div>
+						<div>
+							<img src="img/30303_159281149068413@3x.png"/>
+						</div>
+						<p>网络化测试</p>
+					</div>
+					<div>
+						<p>以“学生为中心”测试，个性化自主选择科目知识点进行组卷测试，精准把握答题速度</p>
+					</div>
+				</div>
+			</div>
+			<div class="kj_t">
+			  <div style="width: 280px;margin-left: 150px;margin-top: 50px;">
+					<img id="fa_img1" src="img/15@3x.png"/>
+				  	<img id="fa_img2" style="display: none;" src="img/组 10@3x.png"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tit_cj" id="tit_cj">
+		<div>
+			<div><p>应用场景</p></div>
+			<div><p>多元化的应用场景</p></div>
+		</div>
+		<div>
+			<div>
+				<div>
+					<img src="img/图层 13@3x.png"/>
+				</div>
+				<div>
+					<p>XCAS互动教育大数据软件系统 （智慧课堂）</p>
+				</div>
+				<div>
+					<p>智教学府XCAS互动教育大数据软件系统， 完美还原现代教育“教、学、练、测、溯” 一体化的整体流程。网络化教学、网络化 组卷考</p>
+				</div>
+			</div>
+			<div>
+				<div>
+					<img src="img/矩形 36@3x.png"/>
+				</div>
+				<div>
+					<p>互动教学</p>
+				</div>
+				<div>
+					<p>实现课堂实时互动教学，课堂练习，可做到 同步展示每个学生练习输入情况，让互动教 学更简单，更生动</p>
+				</div>
+			</div>
+			<div>
+				<div>
+					<img src="img/图层 14@3x.png"/>
+				</div>
+				<div>
+					<p>微课录制</p>
+				</div>
+				<div>
+					<p>智教学府原创投稿etcas软件系统，可轻松 实现教师原创录课、备课、教课、 布置作 业、组卷开始等功能。让自己的教学成果易 保</p>
+				</div>
+			</div>
+			<div>
+				<div>
+					<img src="img/2@3x_1.png"/>
+				</div>
+				<div>
+					<p>学习/练习/测试</p>
+				</div>
+				<div>
+					<p>实现学生个性化自主学习，自主练习与自主 测试。懂，有参照；会，能举一反三。为学 生提供更多的跨搬家、跨校级、跨区级的优 质教</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tit_xx" id="tit_xx">
+		<div>
+			<div><p>政策学习</p></div>
+			<div><p>了解国家教育政策</p></div>
+		</div>
+		<div>
+			<div>
+				<div class="list_l" id="list_1">
+					<div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div><div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div><div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div>
+				</div>
+				<div class="list_l" style="display: none;" id="list_2">
+					<div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								2习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div><div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div><div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div>
+				</div>
+				<div class="list_l" style="display: none;" id="list_3">
+					<div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								3习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div><div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div><div>
+						<div>
+							<div>
+								<img src="img/椭圆 8@3x_1.png"/>
+							</div>
+							<p>
+								习近平电贺朝鲜劳动党成立75周年...
+							</p>
+						</div>
+						<div>
+							<p>2020-10-10</p>
+						</div>
+					</div>
+				</div>
+				<div  class="list_g">
+					<div class="zc_1">
+						<span>←</span>
+					</div>
+					<div>
+						<div class="c_1"><span>1</span></div>
+						<div class="c_2"><span>/</span></div>
+						<div class="c_3"><span>3</span></div>
+					</div>
+					<div class="zc_2">
+						<span>→</span>
+					</div>
+				</div>
+			</div>
+			<div>	
+				<div class="aaa">
+					<div>
+						<div>
+							<p>
+								科教兴国
+							</p>
+						</div>
+						<div>
+							<p>“创新”实现《中国教育现代化2035》</p>
+							<p>信息化教育2.0向信息化教育4、0挺进</p>
+						</div>
+					</div>
+					<img src="img/图层 15@3x.png"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tit_xw" id="tit_xw">
+		<div class="xw_1">
+			<div>
+				<div>
+					<img src="img/卡通放映机_右射@3x_1.png"/>
+				</div>
+			</div>
+			<div>
+				<div>
+					<div>
+						<span style="font-size: 8px;">每个人眼中认为的成功网站的定义都不一样，但可以肯定的 </span>
+					</div>
+					<div>
+						<span>10-10</span>
+					</div>
+				</div>
+				<div>
+					<img src="img/微信图片_20201021171631.png"/>
+				</div>
+			</div>
+		</div>
+		<div class="xw_2" style="display: none;">
+			<div id="xw_21">
+				<div>
+					<div>
+						
+					</div>
+					<div>
+						<p>耳机...</p>
+						<p>每个人眼中认为的成功网站的定义都不一样，但可以肯定的 是，能够吸引目标客户群体为网站带来价值的网站都是,,,</p>
+					</div>
+					<div>
+						<span>2020-10-10 </span>
+					</div>
+				</div>
+				<div>
+					<div></div>
+					<div>
+						<p>耳机...</p>
+						<p>每个人眼中认为的成功网站的定义都不一样，但可以肯定的 是，能够吸引目标客户群体为网站带来价值的网站都是,,,</p>
+					</div>
+					<div>
+						<span>2020-10-10 </span>
+					</div>
+				</div>
+				<div>
+					<div> </div>
+					<div>
+						<p>耳机...</p>
+						<p>每个人眼中认为的成功网站的定义都不一样，但可以肯定的 是，能够吸引目标客户群体为网站带来价值的网站都是,,,</p>
+					</div>
+					<div>
+						<span>2020-10-10 </span>
+					</div>
+				</div>
+				<div>
+					<div></div>
+					<div>
+						<p>耳机...</p>
+						<p>每个人眼中认为的成功网站的定义都不一样，但可以肯定的 是，能够吸引目标客户群体为网站带来价值的网站都是,,,</p>
+					</div>
+					<div>
+						<span>2020-10-10 </span>
+					</div>
+				</div>
+				<div>
+					<div></div>
+					<div>
+						<p>耳机...</p>
+						<p>每个人眼中认为的成功网站的定义都不一样，但可以肯定的 是，能够吸引目标客户群体为网站带来价值的网站都是,,,</p>
+					</div>
+					<div>
+						<span>2020-10-10 </span>
+					</div>
+				</div>
+				<div>
+					<div> </div>
+					<div>
+						<p>耳机...</p>
+						<p>每个人眼中认为的成功网站的定义都不一样，但可以肯定的 是，能够吸引目标客户群体为网站带来价值的网站都是,,,</p>
+					</div>
+					<div>
+						<span>2020-10-10 </span>
+					</div>
+				</div>
+				<div>
+					<div></div>
+					<div>
+						<p>耳机...</p>
+						<p>每个人眼中认为的成功网站的定义都不一样，但可以肯定的 是，能够吸引目标客户群体为网站带来价值的网站都是,,,</p>
+					</div>
+					<div>
+						<span>2020-10-10 </span>
+					</div>
+				</div>
+				<div>
+					<div></div>
+					<div>
+						<p>耳机...</p>
+						<p>每个人眼中认为的成功网站的定义都不一样，但可以肯定的 是，能够吸引目标客户群体为网站带来价值的网站都是,,,</p>
+					</div>
+					<div>
+						<span>2020-10-10 </span>
+					</div>
+				</div>
+				<div>
+					<div></div>
+					<div>
+						<p>耳机...</p>
+						<p>每个人眼中认为的成功网站的定义都不一样，但可以肯定的 是，能够吸引目标客户群体为网站带来价值的网站都是,,,</p>
+					</div>
+					<div>
+						<span>2020-10-10 </span>
+					</div>
+				</div>
+			</div>
+		   <div id="xw_22" style="display: none;">
+				<div>
+					<div>
+						
+					</div>
+					<div>
+						<p>新闻标题新闻标题新闻标题新闻标题...</p>
+						<p>每个人眼中认为的成功网站的定义都不一样，但可以肯定的 是，能够吸引目标客户群体为网站带来价值的网站都是,,,</p>
+					</div>
+					<div>
+						<span>2020-10-10 </span>
+					</div>
+				</div>
+				<div>
+					<div></div>
+					<div>
+						<p>新闻标题新闻标题新闻标题新闻标题...</p>
+						<p>每个人眼中认为的成功网站的定义都不一样，但可以肯定的 是，能够吸引目标客户群体为网站带来价值的网站都是,,,</p>
+					</div>
+					<div>
+						<span>2020-10-10 </span>
+					</div>
+				</div>
+				<div>
+					<div> </div>
+					<div>
+						<p>新闻标题新闻标题新闻标题新闻标题...</p>
+						<p>每个人眼中认为的成功网站的定义都不一样，但可以肯定的 是，能够吸引目标客户群体为网站带来价值的网站都是,,,</p>
+					</div>
+					<div>
+						<span>2020-10-10 </span>
+					</div>
+				</div>
+				<div>
+					<div></div>
+					<div>
+						<p>新闻标题新闻标题新闻标题新闻标题...</p>
+						<p>每个人眼中认为的成功网站的定义都不一样，但可以肯定的 是，能够吸引目标客户群体为网站带来价值的网站都是,,,</p>
+					</div>
+					<div>
+						<span>2020-10-10 </span>
+					</div>
+				</div>
+				<div>
+					<div></div>
+					<div>
+						<p>新闻标题新闻标题新闻标题新闻标题...</p>
+						<p>每个人眼中认为的成功网站的定义都不一样，但可以肯定的 是，能够吸引目标客户群体为网站带来价值的网站都是,,,</p>
+					</div>
+					<div>
+						<span>2020-10-10 </span>
+					</div>
+				</div>
+				<div>
+					<div> </div>
+					<div>
+						<p>新闻标题新闻标题新闻标题新闻标题...</p>
+						<p>每个人眼中认为的成功网站的定义都不一样，但可以肯定的 是，能够吸引目标客户群体为网站带来价值的网站都是,,,</p>
+					</div>
+					<div>
+						<span>2020-10-10 </span>
+					</div>
+				</div>
+				<div>
+					<div></div>
+					<div>
+						<p>新闻标题新闻标题新闻标题新闻标题...</p>
+						<p>每个人眼中认为的成功网站的定义都不一样，但可以肯定的 是，能够吸引目标客户群体为网站带来价值的网站都是,,,</p>
+					</div>
+					<div>
+						<span>2020-10-10 </span>
+					</div>
+				</div>
+				<div>
+					<div></div>
+					<div>
+						<p>新闻标题新闻标题新闻标题新闻标题...</p>
+						<p>每个人眼中认为的成功网站的定义都不一样，但可以肯定的 是，能够吸引目标客户群体为网站带来价值的网站都是,,,</p>
+					</div>
+					<div>
+						<span>2020-10-10 </span>
+					</div>
+				</div>
+				<div>
+					<div></div>
+					<div>
+						<p>新闻标题新闻标题新闻标题新闻标题...</p>
+						<p>每个人眼中认为的成功网站的定义都不一样，但可以肯定的 是，能够吸引目标客户群体为网站带来价值的网站都是,,,</p>
+					</div>
+					<div>
+						<span>2020-10-10 </span>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="page_btn clear">
+        		<span class="page_box"><a class="prev">上一页</a><span class="num"><span class="current_page">1</span><span style="padding:0 3px;">/</span><span>3</span></span><a class="next">下一页</a>
+       			 </span>
+   				 </div>
+			</div>
+		</div>
+		<div class="xw_3" style="display: none;">
+			<div>
+				<span>网站总体的设计关系到网站的定位，整体风格，栏目设置以及 内容框架等</span>
+			</div>
+			<div>
+				<span>2019-05-08</span>
+			</div>
+			<div>
+				<p>每个人眼中认为的成功网站的定义都不一样，但可以肯定的是，能够吸引目标客户群体为网站带来价值的网站都是成功的。如今在互联网飞速发展的时代，各种技术日新月异，互联网作为一个高新技术产业，成功的网站绝非是买台服务器、做几个网页那么简单，专业建站多年的奇亿小编认为，好的网站设计是不容忽视的。</p>
+				<p>一、对网站优化的影响</p>
+				<p>网站总体的设计关系到网站的定位，整体风格，栏目设置以及内容框架等，其中，网站页面的设计是实现网站获得好的排名、吸引用户的关键，在一个网站上线之前，准备功夫必须做足，如果一个网站选择的语言结构与SEO标准化的规范相违背的话，那么可想而知，搜索引擎是不看好的，相反则会给予更高的权重，同时亦可减少后期的优化工作。如：规划完善好网站的MATA标签设置，合理安排关键词密度，减少大图和FLASH的使用等。</p>
+				<p>二、对用户体验的影响</p>
+				<p>通常在建站前做好网站的定位之后，就应站在用户的角度去思索用户的体验习惯，用户进入网站最先感受到的是视觉冲击，网站设计的版面风格以及色块的搭配显得尤为重要，如：一个关于农产品的网站在大家脑海里浮现的多半是绿色，这时你就不能使用有偏于用户习惯的颜色作为主色调，否则会适得其反。另外一个是网站的响应速度，大家都知道，如果一个网站打开的速度超过10秒，你会选择关掉，没错，一个网站的页面设计关乎响应速度，直接影响到用户的体验。</p>
+				<p>三、说到底，何为好的网站设计呢?</p>
+				<p>针对网站的受用目标，网站设计最终的目的要能实现吸引用户体验网站，同时解决网站程序的易用性问题，符合大众习惯，以及功能性问题，给用户提供相应的服务，那可谓是好的网站设计。作为网站成功关键的一步，不妨从它做起。</p>
+			</div>
+		</div>
+	</div>
+	<div class="tit_gy" id="tit_gy">
+		<div>
+			<div id="gsjj">
+				<span>公司简介</span>
+			</div>
+			<div id="gszz">
+				<span>公司资质</span>
+			</div>
+			<div id="lxwm">
+				<span>联系我们</span>
+			</div>
+			<div id="swhz">
+				<span>商务合作</span>
+			</div>
+		</div>
+		<!--公司简介-->
+		<div style="display: block" id="g_1">
+			<div class="gy_1">
+			<div>
+				<div>
+					<p>公司简介</p>
+					<div>
+						<p style="font-size: 8px; width: 320px;">北京智教三和科技有限公司创立于北京市海淀区中关村，是一家专注于智能化教育的移动互联网科技应用型企业，公司坚持以“天、地、人”三和为基，以“帮学生获取优质资源-开拓思维，帮家长掌握孩子学业-提供渠道，帮教师放大教学成果-提升价值”三帮使命为愿景，秉承“教育资源共建共享，智能教育互联互通”的核心价值观，联合全国大批教育行业专家，着力打造面向学生、家长、教师、学校和教育主管部门的，具备超级链接力和实用性的“智教学府XCAS”互动教育大数据系统，帮助传统教育转型升级，实现智能教育互联网化和常态化</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div>
+					<div>
+						<div>
+							<img src="img/组 3@3x.png"/>
+						</div>
+						<div>
+							<p>帮学生获取优质资源—开拓思维</p>
+							<p>帮家长掌握孩子学业—提供渠道</p>
+							<p>帮教师放大教学成果—提升价值</p>
+						</div>
+					</div>
+					<div style="margin-left: 30px;">
+						<div>
+							<img src="img/组 3@3x(1).png"/>
+						</div>
+						<div>
+							<p>教育资源共建共享</p>
+							<p>智能教育互联互通</p>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div>
+						<div>
+							<img src="img/组 3@3x(2).png"/>
+						</div>
+						<div>
+							<p>服务客户，成就员工</p>
+							<p>创新教学，科学育人</p>
+							<p>汇报社会，强大国家</p>
+						</div>
+					</div>
+					<div style="margin-left: 30px;">
+						<div>
+							<img src="img/组 3@3x(3).png"/>
+						</div>
+						<div>
+							<p style="margin-top: -5px;">教学多思，勤奋创新</p>
+							<p>客户至上，服务至微</p>
+							<p>诚信为本，利他为荣</p>
+							<p>执着忠诚，合作共赢</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!--公司资质-->
+		<div style="display: none" id="g_2">
+			<div class="gy_2">
+			<div>
+				<div>
+					<img src="img/智教三和-平板电脑CCC证书_00@3x.png"/>
+				</div>
+				<div>
+					<img src="img/智教三和软件著作权证书1_00@3x.png"/>
+				</div>
+				<div>
+					<img src="img/智教三和软件著作权证书1_01@3x.png"/>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!--联系我们-->
+		<div style="display: none" id="g_3">
+			<div class="gy_3">
+			<div>
+				<p>联系我们</p>
+				<p>公司名称：北京智教三和科技有限公司</p>
+				<p>联系人：姜总 18510963008 </p>
+				<p>王总 18090618233</p>
+				<p>全国免费热线：400-009-038</p>
+				<p>地址：北京市海淀区中关村南大街17号3号楼12层1208-3</p>
+			</div>
+			<div>
+				<img src="img/组 3@3x_1.png"/>
+			</div>
+		</div>
+		</div>
+		<!--商务合作-->
+		<div style="display: none" id="g_4">
+			<div class="gy_4">
+			<div>
+				<p>招商合作</p>
+				<p>全国免费热线：400-009-0938 </p>
+				<div>
+					<p>诚邀：</p>
+					<div>
+						<span>教育从业者</span>
+					</div>
+					<div>
+						<span>事业合伙人</span>
+					</div>
+					<div>
+						<span>运营合伙人</span>
+					</div>
+				</div>
+			</div>
+			<div>
+				<img src="img/商务城市握手合作@3x.png"/>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="footer">
+	<div>
+		<div>
+			<div><img src="img/logo@3x.png"></div>
+			<div><span>智教学府-教育资源共建共享</span></div>
+		</div>
+		<div>
+			<div>
+				<div>
+					<div><img src="img/icon@3x.png"/></div>
+					<div><span>我们的位置</span></div>
+				</div>
+				<div>
+					<div>
+						<span>北京市海淀区中关村南大街 17号3号楼12层1208-3</span>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div>
+					<div><img src="img/icon@3x(1).png"/></div>
+					<div>
+						<span>客服电话</span>
+					</div>
+				</div>
+				<div>
+					<div>
+						<span>400-009-0938</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div>
+				<div>
+					<div>
+						<img src="img/icon@3x(2).png"/>
+					</div>
+					<div>
+						<span>下载APP</span>
+					</div>
+				</div>
+				<div>
+					<div>
+						<img src="img/icon 拷贝@3x.png"/>
+					</div>
+					<div>
+							<span>关注公众号</span>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div style="margin-left: 0px">
+					<img src="img/微信图片_20201022142516.png"/>
+				</div>
+				<div style="margin-left: 55px">
+					<img src="img/微信图片_20201022142516.png"/>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="ye_v">
+	<div>
+			<div>
+				<span>Copyright © 2019-2020    |    成都问号科技有限公司 All Rights Reserved </span>
+			</div>
+			<div>
+				<span>蜀ICP备16009459号-5</span>
+			</div>
+	</div>
+</div>
+</body>
 </html>
